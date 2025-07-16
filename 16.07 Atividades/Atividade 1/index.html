@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade</title>
+  <script>
+    window.onload = function() {
+      
+      alert("Bem-vindo à aula de JavaScript!");
+
+      
+      const continuar = confirm("Você deseja continuar?");
+
+      if (continuar) {
+        
+        const nome = prompt("Qual é o seu nome?");
+
+        
+        if (nome) {
+          alert("Olá " + nome + "! Vamos começar!");
+        } else {
+          alert("Você não informou seu nome.");
+        }
+      } else {
+        alert("Ah tudo bem! Até mais.");
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Atividade</h1>
+</body>
+</html>
