@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+canvas {
+    display: block;
+}
+#coin-counter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: #FFD700; /* Amarelo dourado */
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+#powerup-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10;
+}
+#powerup-bar {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    z-index: 10;
+}
+#powerup-bar-fill {
+    height: 100%;
+    background-color: #00FF00;
+    border-radius: 10px;
+    transition: width 0.1s linear;
+}
+#game-over-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 20;
+}
+#game-over-menu h1 {
+    margin: 0 0 10px;
+}
+#game-over-menu h2 {
+    margin: 20px 0 10px;
+}
+#game-over-menu p {
+    margin: 5px 0;
+}
+#game-over-menu button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+}
+#game-over-menu button:hover {
+    background-color: #FFC107;
+}
+#pause-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    z-index: 20;
+}
+#pause-menu h1 {
+    margin: 0 0 10px;
+}
+#pause-menu h2 {
+    margin: 20px 0 10px;
+}
+#pause-menu p {
+    margin: 5px 0;
+}
+#pause-menu button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #FFD700;
+    border: none;
+    border-radius: 5px;
+}
+#pause-menu button:hover {
+    background-color: #FFC107;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida Maluca
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="coin-counter">Moedas: 0</div>
+    <div id="powerup-counter">
+        Impulso: 0<br>
+        Super Salto: 0<br>
+        Voar: 0
+    </div>
+    <div id="powerup-bar" style="display: none;">
+        <div id="powerup-bar-fill"></div>
+    </div>
+    <div id="game-over-menu" style="display: none;">
+        <h1>Jogo Concluído!</h1>
+        <p>Moedas coletadas: <span id="final-coin-count">0</span></p>
+        <h2>Loja</h2>
+        <p>Moedas disponíveis: <span id="shop-coin-count">0</span></p>
+        <button onclick="buyPowerUp('speedBoost')">Impulso de Velocidade (5 moedas)</button>
+        <button onclick="buyPowerUp('superJump')">Super Salto (5 moedas)</button>
+        <button onclick="buyPowerUp('fly')">Voar (5 moedas)</button>
+        <button onclick="restartGame()">Reiniciar</button>
+    </div>
+    <div id="pause-menu" style="display: none;">
+        <h1>Jogo Pausado</h1>
+        <h2>Comandos</h2>
+        <p>W ou Seta Cima: Mover para frente (subir ao voar)</p>
+        <p>S ou Seta Baixo: Mover para trás (descer ao voar)</p>
+        <p>A ou Seta Esquerda: Mover para esquerda</p>
+        <p>D ou Seta Direita: Mover para direita</p>
+        <p>Espaço: Pular</p>
+        <p>F: Alternar visão (frente/trás)</p>
+        <p>Q: Ativar Impulso de Velocidade</p>
+        <p>E: Ativar Super Salto</p>
+        <p>R: Ativar Voar</p>
+        <p>P: Pausar/Retomar jogo</p>
+        <button onclick="resumeGame()">Retomar</button>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
