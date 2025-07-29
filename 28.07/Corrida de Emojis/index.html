@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Corrida de Emogis</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Corrida Maluca de Emojis</h1>
+        <div class="aposta-container">
+            <h2>Faça sua Aposta!</h2>
+            <p>Escolha em qual corredor você quer apostar:</p>
+            <div class="apostas">
+                <button class="btn-aposta" id="apostar-cachorro"
+                onclick="fazerAposta('emoji1')">
+              🐕 Cachorro
+            </button>
+            <button class="btn-aposta" id="apostar-gato"
+                onclick="fazerAposta('emoji2')">
+                🐈 Gato
+            </button>
+            </div>
+            <p id="aposta-atual"></p>
+        </div>
+        <div class="pista">
+            <div class="corredor" id="emoji1">🐕</div>
+            <div class="corredor" id="emoji2">🐈</div>
+        </div>
+
+        <button id="btn-corrida" onclick="comecarCorrida()"
+        disabled>Iniciar Corrida</button>
+        
+        <div class="resultados">
+            <p id="resultado"></p>
+            <p id="resultado-aposta"></p>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
